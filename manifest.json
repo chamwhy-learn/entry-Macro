@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "엔트리매크로",
+  "description": "엔트리-마이페이지에서 구동되는 확장프로그램",
+  "version": "1.0",
+  "background":{
+
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "background":{
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage",
+    "https://playentry.org/*"
+  ]
+}
