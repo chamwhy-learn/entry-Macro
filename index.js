@@ -108,7 +108,7 @@ function object(pjtid, pjtname){
     function(){
       console.log(id);
       start(id, name);
-    }, 120000+Math.floor(Math.random()*80000)
+    }, 70000+Math.floor(Math.random()*40000)
   );
 }
 function start(id, name){
