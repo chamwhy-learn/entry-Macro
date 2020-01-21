@@ -59,7 +59,7 @@ function setBtn(){
       chrome.storage.sync.get("m_projects", function(data){
         console.log(data);
         if(data.m_projects.includes(projectName)){
-          var ee = data.m_projects.splice(data.m_projects.indexOf(projects), 1);
+          var ee = data.m_projects.splice(data.m_projects.indexOf(projectName), 1);
           console.log(data.m_projects);
           chrome.storage.sync.set({"m_projects": data.m_projects});
         }
